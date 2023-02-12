@@ -51,7 +51,7 @@ export default function ResourcesList() {
                           <div className="flex-initial">
                             <div className="flex flex-wrap -m-2">
                               <div className="w-full md:w-auto p-2">
-                                <a
+                                <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
                                   to="#"
                                 >
@@ -96,7 +96,7 @@ export default function ResourcesList() {
                           <div className="flex-initial">
                             <div className="flex flex-wrap -m-2">
                               <div className="w-full md:w-auto p-2">
-                                <a
+                                <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
                                   to="#"
                                 >
@@ -141,7 +141,7 @@ export default function ResourcesList() {
                           <div className="flex-initial">
                             <div className="flex flex-wrap -m-2">
                               <div className="w-full md:w-auto p-2">
-                                <a
+                                <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
                                   to="#"
                                 >
@@ -160,7 +160,7 @@ export default function ResourcesList() {
             </div>
             <div className="flex flex-wrap md:justify-center -m-2">
               <div className="w-full md:w-auto p-2">
-                <a
+                <Link
                   className="block w-full px-12 py-3.5 text-lg text-center text-white font-bold bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-200 rounded-full"
                   to="#"
                 >
