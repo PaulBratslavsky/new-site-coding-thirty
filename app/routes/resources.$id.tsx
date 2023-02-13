@@ -48,9 +48,7 @@ export default function SingleResourceRoute() {
         {/* Right column */}
         <div className="grid grid-cols-1 gap-4">
           <aside className='rounded-3xl'>
-
             <Bio />
-
           </aside>
         </div>
       </div>

@@ -40,6 +40,15 @@ export default function Navigation() {
                           Resources
                         </Link>
                       </li>
+                      <li className="mr-9">
+                        <Link
+                          className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
+                          to="/playlist"
+                          prefetch="intent"
+                        >
+                          Videos
+                        </Link>
+                      </li>
                       <li>
                         <Link
                           className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
