@@ -36,7 +36,7 @@ export default function ResourcesList() {
                             <p className="mb-3 text-sm text-gray-400 font-bold">
                               Design process • 4 min read
                             </p>
-                            <Link className="group inline-block mb-4" to="#">
+                            <Link className="group inline-block mb-4" to="/resources/test">
                               <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                                 You will never believe these bizarre truth of
                                 travel.
@@ -53,7 +53,7 @@ export default function ResourcesList() {
                               <div className="w-full md:w-auto p-2">
                                 <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
-                                  to="#"
+                                  to="/resources/test"
                                 >
                                   Read More
                                 </Link>
@@ -81,7 +81,7 @@ export default function ResourcesList() {
                             <p className="mb-3 text-sm text-gray-400 font-bold">
                               Design process • 4 min read
                             </p>
-                            <Link className="group inline-block mb-4" to="#">
+                            <Link className="group inline-block mb-4" to="/resources/test">
                               <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                                 You will never believe these bizarre truth of
                                 travel.
@@ -98,7 +98,7 @@ export default function ResourcesList() {
                               <div className="w-full md:w-auto p-2">
                                 <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
-                                  to="#"
+                                  to="/resources/test"
                                 >
                                   Read More
                                 </Link>
@@ -126,7 +126,7 @@ export default function ResourcesList() {
                             <p className="mb-3 text-sm text-gray-400 font-bold">
                               Design process • 4 min read
                             </p>
-                            <Link className="group inline-block mb-4" to="#">
+                            <Link className="group inline-block mb-4" to="/resources/test">
                               <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                                 You will never believe these bizarre truth of
                                 travel.
@@ -143,7 +143,7 @@ export default function ResourcesList() {
                               <div className="w-full md:w-auto p-2">
                                 <Link
                                   className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
-                                  to="#"
+                                  to="/resources/test"
                                 >
                                   Read More
                                 </Link>
@@ -164,7 +164,7 @@ export default function ResourcesList() {
                   className="block w-full px-12 py-3.5 text-lg text-center text-white font-bold bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-200 rounded-full"
                   to="#"
                 >
-                  Read more News
+                  More Resources
                 </Link>
               </div>
             </div>

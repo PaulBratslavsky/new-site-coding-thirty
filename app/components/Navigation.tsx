@@ -49,6 +49,9 @@ export default function Navigation() {
                           Blog
                         </Link>
                       </li>
+                      <li>
+                      <Link className="ml-8 button button-sm inline-block max-w-max w-full px-4 py-1.5 text-md text-center text-white font-bold bg-pink-600 hover:bg-pink-700 rounded-full" to="join">Community</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>

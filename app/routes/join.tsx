@@ -1,5 +1,7 @@
+import JoinTheCommunity from "~/components/JoinTheCommunity";
+
 export default function BlogRoute() {
   return (
-    <div>Join The Community</div>
+    <div><JoinTheCommunity /></div>
   )
 }

@@ -1,6 +1,11 @@
 import { Link } from "@remix-run/react";
 
-export default function FeaturedPosts() {
+interface Props {
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+export default function FeaturedPosts({ buttonText, buttonLink }: Props) {
   return (
     <section className="py-10 bg-gray-800 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -27,7 +32,7 @@ export default function FeaturedPosts() {
                     alt=""
                   />
                   <div className="p-8">
-                    <Link className="group inline-block mb-4" to="#">
+                    <Link className="group inline-block mb-4" to="/blog/test">
                       <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                         You will never believe these bizarre truth of travel.
                       </h3>
@@ -39,14 +44,14 @@ export default function FeaturedPosts() {
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4">
-              <div className="h-full bg-gray-800 rounded-3xl overflow-hidden">
+                <div className="h-full bg-gray-800 rounded-3xl overflow-hidden">
                   <img
                     className="w-full object-cover object-center h-64"
                     src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg"
                     alt=""
                   />
                   <div className="p-8">
-                    <Link className="group inline-block mb-4" to="#">
+                    <Link className="group inline-block mb-4" to="/blog/test">
                       <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                         Five web design blogs you should be reading
                       </h3>
@@ -58,14 +63,14 @@ export default function FeaturedPosts() {
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4">
-              <div className="h-full bg-gray-800 rounded-3xl overflow-hidden">
+                <div className="h-full bg-gray-800 rounded-3xl overflow-hidden">
                   <img
                     className="w-full object-cover object-center h-64"
                     src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
                     alt=""
                   />
                   <div className="p-8">
-                    <Link className="group inline-block mb-4" to="#">
+                    <Link className="group inline-block mb-4" to="/blog/test">
                       <h3 className="font-heading text-2xl text-white hover:text-gray-200 group-hover:underline font-black">
                         80 Best Virtual Reality Blogs and Websites
                       </h3>
@@ -77,16 +82,12 @@ export default function FeaturedPosts() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap md:justify-center -m-2">
-              <div className="w-full md:w-auto p-2">
-                <Link
-                  className="block w-full px-12 py-3.5 text-lg text-center text-gray-900 font-bold bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full"
-                  to="#"
-                >
-                  Blog
-                </Link>
-              </div>
-            </div>
+            {(buttonLink && buttonText) &&
+              <div className="flex flex-wrap md:justify-center -m-2">
+                <div className="w-full md:w-auto p-2">
+                  <Link className="block w-full px-12 py-3.5 text-lg text-center text-gray-900 font-bold bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:ring-gray-600 rounded-full" to={buttonLink}>{buttonText}</Link>
+                </div>
+              </div>}
           </div>
         </div>
       </div>

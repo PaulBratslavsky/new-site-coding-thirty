@@ -23,7 +23,7 @@ export default function Header() {
                       className="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-blue-200 rounded-full"
                       to="/join"
                     >
-                      Get Started
+                      Join Our Community
                     </Link>
                   </div>
                   <div className="w-full md:w-auto p-2"></div>

@@ -12,7 +12,7 @@ export default function BlogList() {
             <span className="inline-block mb-4 text-xs text-gray-400">10 jun 2020 19:40</span>
             <h2 className="text-white mb-4 text-3xl font-semibold font-heading">Lorem ipsum dolor sit amet consectutar domor at elis</h2>
             <p className="mb-4 text-xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
-            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="#">Read more</Link>
+            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="/blog/test">Read more</Link>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-16">
             <div className="flex h-96 mb-10">
@@ -21,7 +21,7 @@ export default function BlogList() {
             <span className="inline-block mb-4 text-xs text-gray-400">10 jun 2020 19:40</span>
             <h2 className="text-white mb-4 text-3xl font-semibold font-heading">Lorem ipsum dolor</h2>
             <p className="mb-4 text-xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="#">Read more</Link>
+            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="/blog/test">Read more</Link>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-16">
             <div className="flex h-96 mb-10">
@@ -30,7 +30,7 @@ export default function BlogList() {
             <span className="inline-block mb-4 text-xs text-gray-400">10 jun 2020 19:40</span>
             <h2 className="text-white mb-2 text-3xl font-semibold font-heading">Lorem ipsum dolor</h2>
             <p className="mb-4 text-xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="#">Read more</Link>
+            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="/blog/test">Read more</Link>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-16">
             <div className="flex h-96 mb-10">
@@ -39,7 +39,7 @@ export default function BlogList() {
             <span className="inline-block mb-4 text-xs text-gray-400">10 jun 2020 19:40</span>
             <h2 className="text-white mb-4 text-3xl font-semibold font-heading">Lorem ipsum dolor</h2>
             <p className="mb-4 text-xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="#">Read more</Link>
+            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="/blog/test">Read more</Link>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-16">
             <div className="flex h-96 mb-10">
@@ -48,7 +48,7 @@ export default function BlogList() {
             <span className="text-xs font-semibold text-gray-400">10 jun 2020 19:40</span>
             <h2 className="text-white mb-4 text-3xl font-semibold font-heading">Lorem ipsum dolor</h2>
             <p className="mb-4 text-xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="#">Read more</Link>
+            <Link className="text-lg font-medium text-pink-500 underline hover:no-underline" to="/blog/test">Read more</Link>
           </div>
         </div>
       </div>

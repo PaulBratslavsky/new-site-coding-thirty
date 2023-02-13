@@ -16,11 +16,14 @@ export default function Footer() {
               <div className="w-auto p-4">
                 <ul className="-m-6">
                   <li className="inline-flex p-6">
-                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="#">Home</Link></li>
+                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/">Home</Link></li>
                   <li className="inline-flex p-6">
-                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="#">Resources</Link></li>
+                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/resources">Resources</Link></li>
                   <li className="inline-flex p-6">
-                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="#">Blog</Link></li>
+                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/blog">Blog</Link></li>
+                    <li className="inline-flex p-6">
+                    <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/join">Our Community</Link></li>
+             
                 </ul>
               </div>
               <div className="w-auto p-4">

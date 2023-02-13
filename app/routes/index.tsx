@@ -9,8 +9,8 @@ export default function Index() {
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <Header />
       <Bio />
-      <FeaturedPosts />
-      <FeaturedResources />
+      <FeaturedPosts buttonLink="/blog" buttonText="Posts"/>
+      <FeaturedResources  buttonLink="/resources" buttonText="Resources"/>
       <JoinTheCommunity />
     </div>
   );
