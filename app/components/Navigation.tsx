@@ -22,7 +22,7 @@ export default function Navigation() {
                 <div className="flex flex-wrap items-center">
                   <div className="w-auto hidden lg:block">
                     <ul className="flex items-center justify-center">
-                      <li className="mr-9">
+                      {/* <li className="mr-9">
                         <Link
                           className="inline-block text-sm font-bold text-gray-200 hover:text-gray-300"
                           to="/"
@@ -57,7 +57,7 @@ export default function Navigation() {
                         >
                           Blog
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                       <Link className="ml-8 button button-sm inline-block max-w-max w-full px-4 py-1.5 text-md text-center text-white font-bold bg-pink-600 hover:bg-pink-700 rounded-full" to="join">Community</Link>
                       </li>

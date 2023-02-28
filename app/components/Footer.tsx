@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="w-auto p-4">
                 <Logo />
               </div>
-              <div className="w-auto p-4">
+              {/* <div className="w-auto p-4">
                 <ul className="-m-6">
                   <li className="inline-flex p-6">
                     <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/">Home</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                     <Link className="inline-block text-gray-500 hover:text-gray-600 font-bold" to="/join">Our Community</Link></li>
 
                 </ul>
-              </div>
+              </div> */}
               <div className="w-auto p-4">
                 <SocialLinks />
               </div>

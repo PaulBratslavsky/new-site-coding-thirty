@@ -1,5 +1,38 @@
 import { Link } from "@remix-run/react";
-export default function Header() {
+
+interface HeaderProps {
+  data: {
+    id: string;
+    caption: string;
+    heading: string;
+    subHeading: string;
+    HeroLink: {
+      href: string;
+      text: string;
+    };
+    image: {
+      data: {
+        id: string;
+        attributes: {
+          name: string;
+          alternativeText: string;
+          formats: {
+            medium: {
+              url: string;
+            }
+          };
+        }
+      }
+    };
+  }
+}
+
+
+export default function Header({ data: { id, caption, heading, subHeading, HeroLink, image } }: HeaderProps) {
+  console.log(image.data.attributes)
+  const { alternativeText, formats } = image.data.attributes;
+  const imageSrc = "https://mucho-valid-night.strapiapp.com" + formats.medium.url;
+  console.log(imageSrc)
   return (
     <section className="pt-6 bg-gray-800 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -8,22 +41,21 @@ export default function Header() {
             <div className="w-full md:w-1/2 p-8">
               <div className="md:max-w-lg mx-auto">
                 <span className="inline-block mb-3 text-sm text-pink-500 font-bold uppercase tracking-widest">
-                  Best caption here
+                  {caption}
                 </span>
                 <h1 className="font-heading mb-4 text-5xl text-white font-black tracking-tight">
-                  <span>Build better products faster then ever</span>
+                  <span>{heading}</span>
                 </h1>
                 <p className="mb-6 text-xl text-gray-500 font-bold">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  venenatis volutpat velit.
+                  {subHeading}
                 </p>
                 <div className="flex flex-wrap -m-2">
                   <div className="w-full md:w-auto p-2">
                     <Link
                       className="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-blue-200 rounded-full"
-                      to="/join"
+                      to={HeroLink.href}
                     >
-                      Join Our Community
+                      {HeroLink.text}
                     </Link>
                   </div>
                   <div className="w-full md:w-auto p-2"></div>
@@ -34,8 +66,8 @@ export default function Header() {
               <div className="max-w-max mx-auto md:mr-0 bg-white overflow-hidden rounded-3xl">
                 <img
                   className="mx-auto"
-                  src="https://images.pexels.com/photos/1181280/pexels-photo-1181280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  src={imageSrc}
+                  alt={alternativeText || "Alt text is missing"}
                 />
               </div>
             </div>
