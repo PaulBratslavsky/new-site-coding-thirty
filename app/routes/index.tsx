@@ -14,19 +14,22 @@ export const loader = async () => {
   return json({ data });
 }
 
-export default function Index() {
+export default function IndexRoute() {
   const { data } = useLoaderData<typeof loader>();
-  const pageContent = data.data[0].attributes.Layout;
+
+  const pageContent = data.data.attributes.page_layout;
+  console.log(data.data.attributes)
+
 
   function blockRenderer(block: any) {
     console.log(block)
     switch (block.__component) {
-      case "layout.hero":
+      case "my-components.hero":
       return <Header key={block.id} data={block} />
     }
- 
     return null;
   }
+
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       {pageContent && pageContent.map(blockRenderer)}

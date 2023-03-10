@@ -6,9 +6,11 @@ interface HeaderProps {
     caption: string;
     heading: string;
     subHeading: string;
-    HeroLink: {
-      href: string;
+    heroLink: {
+      id: string;
+      url: string;
       text: string;
+      newTab: boolean;
     };
     image: {
       data: {
@@ -27,12 +29,10 @@ interface HeaderProps {
   }
 }
 
-
-export default function Header({ data: { id, caption, heading, subHeading, HeroLink, image } }: HeaderProps) {
-  console.log(image.data.attributes)
+export default function Header({ data: {  caption, heading, subHeading, heroLink, image } }: HeaderProps) {
   const { alternativeText, formats } = image.data.attributes;
-  const imageSrc = "https://mucho-valid-night.strapiapp.com" + formats.medium.url;
-  console.log(imageSrc)
+  const imageSrc = formats.medium.url;
+
   return (
     <section className="pt-6 bg-gray-800 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -53,9 +53,9 @@ export default function Header({ data: { id, caption, heading, subHeading, HeroL
                   <div className="w-full md:w-auto p-2">
                     <Link
                       className="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-blue-200 rounded-full"
-                      to={HeroLink.href}
+                      to={heroLink.url}
                     >
-                      {HeroLink.text}
+                      {heroLink.text}
                     </Link>
                   </div>
                   <div className="w-full md:w-auto p-2"></div>
