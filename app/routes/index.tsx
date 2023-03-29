@@ -10,7 +10,7 @@ import { getPageBySlug } from "~/api/page.server";
 import JoinTheCommunity from "~/components/JoinTheCommunity";
 
 export const loader = async () => {
-  const data = await getPageBySlug("home");
+  const data = await getPageBySlug("coding-after-thirty");
   return json({ data });
 }
 
