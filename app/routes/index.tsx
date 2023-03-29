@@ -16,10 +16,7 @@ export const loader = async () => {
 
 export default function IndexRoute() {
   const { data } = useLoaderData<typeof loader>();
-
   const pageContent = data.data.attributes.page_layout;
-  console.log(data.data.attributes)
-
 
   function blockRenderer(block: any) {
     console.log(block)
@@ -33,6 +30,7 @@ export default function IndexRoute() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       {pageContent && pageContent.map(blockRenderer)}
+      <JoinTheCommunity />
       
       {/* <Bio />
       <FeaturedPosts buttonLink="/blog" buttonText="Posts"/>
