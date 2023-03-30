@@ -19,7 +19,6 @@ export default function IndexRoute() {
   const pageContent = data.data.attributes.page_layout;
 
   function blockRenderer(block: any) {
-    console.log(block)
     switch (block.__component) {
       case "my-components.hero":
       return <Header key={block.id} data={block} />
